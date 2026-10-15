@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV | Cristian Alberto Calderón Tames</title>
+  <meta name="description" content="Currículum profesional y proyectos de Cristian Alberto Calderón Tames, estudiante de Tecnologías de Información en el CUC">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/contacto.js" defer></script>
+</head>
+<body>
+
+  <!-- Datos siempre visibles: el encabezado es fi -->
+  <header class="encabezado">
+    <div class="encabezado__contenido">
+      <h1 class="nombre">Cristian Alberto Calderón Tames</h1>
+      <ul class="datos-fijos">
+        <li><a href="tel:+50687206295">Tel: +506 8720-6295</a></li>
+        <li><a href="mailto:cristian28ct1@gmail.com"> Correo: cristian28ct1@gmail.com</a></li>
+      </ul>
+    </div>
+    <nav class="menu" aria-label="Secciones del CV">
+      <a href="#perfil">Perfil</a>
+      <a href="#estudios">Estudios</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#lenguajes">Lenguajes</a>
+      <a href="#proyectos">Proyectos</a>
+    </nav>
+  </header>
+
+  <main class="pagina">
+
+    <section id="perfil" class="seccion">
+      <h2>Perfil profesional</h2>
+      <p>
+        Estudiante de Tecnologías de Información (TI) del Colegio Universitario de Cartago (CUC),
+        actualmente en el penúltimo cuatrimestre de la carrera. Soy una persona responsable, me gusta
+        trabajar en equipo y me adapto con facilidad a nuevos retos y desafíos. Busco oportunidades
+        para aplicar mis conocimientos y seguir creciendo profesionalmente en el área de TI.
+      </p>
+    </section>
+
+    <section id="estudios" class="seccion">
+      <h2>Estudios</h2>
+      <ul class="linea-tiempo">
+        <li>
+          <h3>Tecnologías de Información (TI)</h3>
+          <p class="meta">Colegio Universitario de Cartago (CUC) · Enero 2025 – Abril 2027 (en curso, penúltimo cuatrimestre)</p>
+        </li>
+        <li>
+          <h3>Bachillerato en Educación Media</h3>
+          <p class="meta">Liceo Elías Leiva Quirós · 2024</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="habilidades" class="seccion">
+      <h2>Habilidades desarrolladas</h2>
+      <ul class="chips">
+        <li>Trabajo en equipo</li>
+        <li>Resolución de problemas</li>
+        <li>Diseño web</li>
+        <li>Uso de GitHub</li>
+        <li>Bases de datos</li>
+        <li>Sistemas operativos</li>
+        <li>Redes y soporte técnico</li>
+      </ul>
+    </section>
+
+    <section id="lenguajes" class="seccion">
+      <h2>Lenguajes que manejo</h2>
+      <div class="dos-columnas">
+        <div>
+          <h3>Programación</h3>
+          <ul class="chips">
+            <li>C#</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Idiomas</h3>
+          <ul class="chips">
+            <li>Español – nativo</li>
+            <li>Inglés – C1</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="seccion">
+      <h2>Proyectos</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <h3>Sistema de Gestión de Citas Médicas (consola)</h3>
+          <p>Aplicación de consola en Python para administrar médicos, pacientes y citas de una clínica, con datos guardados en archivos JSON. Proyecto individual.</p>
+          <a class="boton" href="proyecto1.html">Ver proyecto →</a>
+        </article>
+        <article class="tarjeta">
+          <h3>Sistema de Citas Médicas Web</h3>
+          <p>Versión web con frontend en C# (ASP.NET Core MVC), backend en Python con sockets e hilos, y bases de datos MongoDB y SQL Server. Desarrollado en parejas.</p>
+          <a class="boton" href="proyecto2.html">Ver proyecto →</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <button type="button" id="btn-contacto" class="boton boton--contacto"
+            aria-expanded="false" aria-controls="panel-contacto">
+      Formas de contacto <span class="icono" aria-hidden="true">+</span>
+    </button>
+
+    <div id="panel-contacto" class="panel-contacto" hidden>
+      <ul>
+        <li><strong>Correo:</strong> <a href="mailto:cristian28ct1@gmail.com">cristian28ct1@gmail.com</a></li>
+        <li><strong>Teléfono:</strong> <a href="tel:+50687206295">8720-6295</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/cristian-alberto-calder%C3%B3n-tames-4993b939b/" target="_blank" rel="noopener">Cristian Alberto Calderón Tames</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/ItsCris728" target="_blank" rel="noopener">github.com/ItsCris728</a></li>
+      </ul>
+    </div>
+
+    <p class="derechos">© 2026 Cristian Alberto Calderón Tames</p>
+  </footer>
+
+</body>
+</html>

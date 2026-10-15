@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Citas Médicas Web | Proyecto</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado encabezado--proyecto">
+    <div class="encabezado__contenido">
+      <a class="boton boton--volver" href="index.html">← Volver al CV</a>
+      <h1 class="nombre">Sistema de Citas Médicas Web</h1>
+    </div>
+  </header>
+
+  <main class="pagina">
+
+    <section class="seccion">
+      <h2>Descripción</h2>
+      <p>
+        Versión web del sistema de la clínica ficticia Salud y Bienestar. Los clientes pueden registrarse,
+        consultar médicos y su disponibilidad, y agendar o cancelar sus citas; los empleados de la clínica
+        administran médicos, especialidades, horarios, clientes y empleados, gestionan las citas y
+        facturan los servicios con el cálculo del IVA.
+      </p>
+    </section>
+
+    <section class="seccion">
+      <h2>Mi rol</h2>
+      <p>
+        Proyecto desarrollado en parejas como prueba final del curso TI-141 Programación III del Colegio
+        Universitario de Cartago (II cuatrimestre de 2026). Trabajamos de forma colaborativa en el diseño
+        y el desarrollo del sistema completo.
+      </p>
+    </section>
+
+    <section class="seccion">
+      <h2>Arquitectura</h2>
+      <ul class="lista">
+        <li><strong>Frontend:</strong> aplicación web en C# con ASP.NET Core MVC (.NET 8).</li>
+        <li><strong>Comunicación:</strong> el frontend envía sus peticiones por un socket al backend, en mensajes JSON con acción y datos; el backend responde con un estatus, un mensaje y los datos.</li>
+        <li><strong>Backend:</strong> servidor en Python que atiende cada petición en un hilo independiente.</li>
+        <li><strong>Datos:</strong> MongoDB para médicos, clientes, empleados, especialidades, datos de la clínica, horarios y usuarios; SQL Server para citas, facturas y detalle de facturación.</li>
+      </ul>
+    </section>
+
+    <section class="seccion">
+      <h2>Tecnologías utilizadas</h2>
+      <ul class="chips">
+        <li>C#</li>
+        <li>ASP.NET Core MVC (.NET 8)</li>
+        <li>Python (sockets e hilos)</li>
+        <li>MongoDB</li>
+        <li>SQL Server</li>
+        <li>JSON</li>
+        <li>HTML y CSS</li>
+      </ul>
+    </section>
+
+    <section class="seccion">
+      <h2>Funcionalidades</h2>
+      <ul class="lista">
+        <li><strong>Acceso:</strong> registro de usuarios desde la página inicial e inicio de sesión de clientes y de empleados, solo si están activos. Las claves se guardan cifradas con hash.</li>
+        <li><strong>Clientes:</strong> actualizar sus datos, consultar médicos por especialidad, ver la disponibilidad semanal, agendar citas, modificarlas o cancelarlas con al menos dos días de anticipación, y ver su historial y su facturación.</li>
+        <li><strong>Empleados:</strong> mantenimiento de médicos, especialidades, horarios, datos de la clínica, clientes (activos o inactivos) y otros empleados; registrar, modificar o cancelar citas; y ver el horario semanal de cada especialista con las citas asignadas y las disponibles.</li>
+        <li><strong>Facturación:</strong> registro de los servicios recibidos, cálculo del IVA y del total mostrando el detalle antes de pagar, y registro del pago.</li>
+        <li><strong>Validación de datos:</strong> revisa tipos, rangos y duplicados en las entradas y avisa al usuario para que pueda corregir.</li>
+      </ul>
+    </section>
+
+    <p class="volver"><a class="boton" href="index.html">← Volver al CV</a></p>
+  </main>
+
+  <footer class="pie">
+    <p class="derechos">© 2026 Cristian Alberto Calderón Tames</p>
+  </footer>
+
+</body>
+</html>

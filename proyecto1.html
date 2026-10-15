@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestión de Citas Médicas | Proyecto</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado encabezado--proyecto">
+    <div class="encabezado__contenido">
+      <a class="boton boton--volver" href="index.html">← Volver al CV</a>
+      <h1 class="nombre">Sistema de Gestión de Citas Médicas (consola)</h1>
+    </div>
+  </header>
+
+  <main class="pagina">
+
+    <section class="seccion">
+      <h2>Descripción</h2>
+      <p>
+        Sistema para la clínica ficticia Salud y Bienestar, pensado para administrar de forma eficiente
+        los tiempos de los médicos y de los pacientes. Permite registrar médicos con una o varias
+        especialidades y su horario mensual, registrar pacientes con sus padecimientos, y agendar citas de
+        30 minutos dentro del horario de atención de la clínica (7:00 a.m. a 10:00 p.m.) y con un máximo
+        de un mes de anticipación.
+      </p>
+      <p>
+        Toda la información se guarda en archivos JSON y se carga en listas en memoria al iniciar el
+        programa, lo que hace más rápidas las búsquedas.
+      </p>
+    </section>
+
+    <section class="seccion">
+      <h2>Mi rol</h2>
+      <p>
+        Proyecto individual, desarrollado por mí completo para el curso TI-141 Programación III del
+        Colegio Universitario de Cartago (II cuatrimestre de 2026): diseño de las clases, lógica de
+        búsqueda y reserva de citas, validación de datos y persistencia en archivos.
+      </p>
+    </section>
+
+    <section class="seccion">
+      <h2>Tecnologías utilizadas</h2>
+      <ul class="chips">
+        <li>Python 3.10+</li>
+        <li>Programación orientada a objetos</li>
+        <li>Archivos JSON</li>
+        <li>Aplicación de consola</li>
+        <li>Solo módulos estándar de Python</li>
+      </ul>
+    </section>
+
+    <section class="seccion">
+      <h2>Funcionalidades</h2>
+      <ul class="lista">
+        <li><strong>Pacientes:</strong> registrar, modificar y buscar pacientes, y agregar sus padecimientos.</li>
+        <li><strong>Médicos:</strong> registrar y modificar médicos, administrar sus especialidades (puede tener varias) y su horario mensual.</li>
+        <li><strong>Búsquedas flexibles:</strong> por nombre, especialidad, fecha u otros criterios, solos o combinados. Al buscar médicos se muestran solo sus datos públicos, no su teléfono ni correo personal.</li>
+        <li><strong>Citas:</strong> reservar, buscar, modificar (cambio de hora) y cancelar citas, verificando que el médico esté disponible y que sea horario válido.</li>
+        <li><strong>Reportes:</strong> agenda de un médico por día o por semana.</li>
+        <li><strong>Validación de datos:</strong> revisa tipos, rangos y duplicados en cada entrada, avisa al usuario y le permite corregir.</li>
+        <li><strong>Persistencia:</strong> los datos se guardan y se recuperan desde archivos JSON.</li>
+      </ul>
+    </section>
+
+    <p class="volver"><a class="boton" href="index.html">← Volver al CV</a></p>
+  </main>
+
+  <footer class="pie">
+    <p class="derechos">© 2026 Cristian Alberto Calderón Tames</p>
+  </footer>
+
+</body>
+</html>
